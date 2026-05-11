@@ -1,0 +1,16 @@
+<!--G - Elaborar um programa para uma loja, o qual leia o preço de um produto e informe as
+   opções de pagamento da loja. Calcule e informe o valor para pagamento à vista com 10%
+   de desconto e o valor em 3x.
+   Exemplo:
+   Preço: R$ 60.00
+   À Vista: R$ 54.00
+   Ou 3x de: R$ 20.00
+   Nomeie o arquivo como exercicioG.html-->
+
+   <script>
+    const valorProduto = Number(prompt("Digite do produto:"));
+    const desc = valorProduto - (valorProduto * 0.1);
+    const parc = valorProduto / 3;
+    //const parc = Number(prompt(`Digite em quantas parcelas pagará: ${valorProduto}:`));
+    alert(`O valor do produto é ${valorProduto}. A vista, ele tem 10% de desconto e fica: ${desc}. Já parcelado em 3x, ele fica: ${parc}`);
+   </script>
