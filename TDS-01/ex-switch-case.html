@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case JS</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <h1>Menu de opções: </h1>
+    <p>1 - Contas a pagar</p>
+    <p>2 - Contas a receber</p>
+    <p>3 - Controle de estoque</p>
+    <p>4 - Relatório</p>
+    <p>5 - Backup</p>
+
+    <form>
+        <p>Digite sua opção:
+            <input type="number" id="inOpcao">
+        </p>
+        <input type="button" value="Mostrar Reposta" onclick="resposta()">
+    </form>
+    <h3></h3>
+    <script>
+        const frm = document.querySelector("form");
+        const resp = document.querySelector("h3");
+        
+        function resposta(){
+            let opcaoMenu = Number(frm.inOpcao.value);
+
+         switch(opcaoMenu) {
+            case 1:
+                resp.innerText = "Você escolheu o sistema Contas a Pagar";
+                break;
+            case 2:
+                resp.innerText = "Você escolheu o sistema Constas a Receber";
+                break;
+            case 3:
+                resp.innerText = "Você escolheu o sistema Controle de Estoque";
+                break;
+            case 4:
+                resp.innerText = "Você escolheu visualizar os relatórios";
+                break;
+            case 5:
+                resp.innerText = "Você escolheu o sistema de Backup";
+                break;
+            default:
+                resp.innerText = "Essa opção é invalida";
+        }
+        }
+
+        
+    </script>
+
+    <!--
+    <script>
+        const menu = prompt('Escolha a opção de ação desejada de 1 a 5: ')
+
+        const bairro = prompt('Bairro de entrega: ')
+
+        let taxaEntrega;
+
+        switch(bairro) {
+            case 'Centro':
+                taxaEntrega = 5.00;
+                break;
+            case 'Campos Eliseos':
+            case 'Jardim Paulista':
+                taxaEntrega = 7.00;
+                break;
+            case 'Sumarezinho':
+                taxaEntrega = 10.00;
+                break;
+            default:
+                taxaEntrega = 15.00;
+        }
+
+        alert(`Taxa R$ ${taxaEntrega.toFixed(2)}`);
+
+    </script>
+
+-->
+
+</body>
+   
+    <!--<script src="./js/switchCase.js"></script>-->
+</html>
