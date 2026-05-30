@@ -1,0 +1,14 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+h1{
+    border-bottom-style: inset;
+}
