@@ -14,7 +14,7 @@ frm.addEventListener("submit", (e) => {
     
     if (velCondutor <= velPermitida) {
         resp.innerText = "Sem Multa";
-    } else if (velCondutor <= velPermitida + (velPermitida / 20)) {
+    } else if (velCondutor <= velPermitida * 1.2) {
         resp.innerText = "Multa Leve";
     } else {
         resp.innerText = "Multa Grave";
