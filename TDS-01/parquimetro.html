@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./img/js.png">
+  <link rel="stylesheet" href="./css/stylus.css">
   <title>Parquímetro</title>
-  <link rel="stylesheet" href="css/stylus.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>Simulador de Parquímetro JS</h1>
-    <label for="valor">Valor depositado (R$):</label>
-    <input type="number" id="valor" step="0.01" min="0"/>
-    <button id="btnCalcular">Calcular Tempo</button>
-    <div id="resultado">Informe um valor e clique em calcular.</div>
-  </div>
+  <img src="img/exerc.jpg" class="exerc" alt="Exercícios">
+  <h1>Programa Parquímetro</h1>
+  <form>
+    <p>Valor R$:
+      <input type="number" id="inValor" min="0" step="0.01">
+    </p>
+    <p>
+      <input type="submit" value="Confirmar Depósito">
+    </p>
+  </form>
+  <h3 id="outTempo"></h3>
+  <h3 id="outTroco"></h3>
   <script src="./js/parquimetro.js"></script>
 </body>
+
 </html>
