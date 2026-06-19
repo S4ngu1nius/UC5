@@ -15,7 +15,7 @@ frm.addEventListener("submit", (e) => {
 
     for (let ano = 1; ano <= anos; ano++) {
         if (ano > 1) {
-        quantidade = quantidade * 3;
+        quantidade *= 3;
         }
 
         resposta += `${ano}º ano: ${quantidade} chinchilas\n`;
