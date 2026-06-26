@@ -1,0 +1,42 @@
+<script>
+    const cidades = ["Ribeirão Preto"];  //declara e define o valor inicial do array
+
+    cidades.push("Serrana");             //adiciona cidade ao final do vetor
+    console.log(cidades);               //["Ribeirão Preto", "Serrana"]
+
+    cidades.unshift("Sertãozinho");     //adiciona ao inicio e desloca as demais
+    console.log(cidades);               //["Sertãozinho", "Ribeirão Preto", "Serrana"]
+
+    console.log(cidades.toString());
+    console.log(cidades.join(" - "));
+
+    console.table(cidades);             //mostra array na forma de tabela
+
+    const ultima = cidades.pop();       //remove a ultima cidade do vetor
+    console.log(cidades);               //["Sertãozinho", "Ribeirão Preto"]
+
+    const primeira = cidades.shift();   //remove a primeira cidade e "sobe" as demais
+    console.log(cidades);               //["Ribeirão Preto"]
+
+    console.log(ultima)
+    console.log(primeira)
+
+    for(const cidade of cidades){
+        console.log(cidade);
+    }
+
+/*    for(let i = 0; i < cidades.length; i++){
+        console.log(cidades[i])
+    }*/
+
+    cidades.forEach((cidade, i) => {
+        console.log(`${i+1}ª Cidade: ${cidade}`);
+    })
+
+
+    const numeros = [5, 10, 15, 20]
+    let soma = 0
+    numeros.forEach(num => soma += num)
+    console.log(`Soma dos Números: ${soma}`);
+
+</script>
