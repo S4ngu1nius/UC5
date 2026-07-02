@@ -3,6 +3,7 @@ const respNome = document.querySelector("span");
 const respLista = document.querySelector("pre");
 
 const pacientes = []; //declara array global
+let qtdUrgentes = 0;
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -31,10 +32,14 @@ frm.btUrgencia.addEventListener("click", () => {
         frm.inPaciente.focus();        //vai posicionar o cursor no campo
         return;
     }
-    
-    const nome = frm.inPaciente.value;
+
+    /*const nome = frm.inPaciente.value;
     pacientes.unshift(nome);            //adiciona paciente no inicio do campo
-    let lista = "";                     //string para concatenar pacientes
+    let lista = "";*/                     //string para concatenar pacientes
+    const nome = frm.inPaciente.value;
+    pacientes.splice(qtdUrgentes,0,nome);   // adiciona paciente no inicio do campo
+    let lista = "";
+    qtdUrgentes++;
     //forEach() aplicado sobre o array pacientes
     pacientes.forEach((paciente, i) => (lista += `${i + 1}. ${paciente}\n`));
     respLista.innerText = lista;
