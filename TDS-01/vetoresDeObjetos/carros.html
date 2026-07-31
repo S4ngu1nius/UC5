@@ -1,0 +1,41 @@
+<script>
+    
+    const carros = [];
+    carros.push({modelo: "Sandero", preco: 46.500});
+    carros.push({modelo: "Palio", preco: 37.800});
+    carros.push({modelo: "Gol", preco: 45.800});
+
+    const modelo = "Fiesta"; 
+    const preco = 46.800; 
+    carros.push({modelo, preco});
+
+    for (const carro of carros) {
+        // console.log(`${carro.modelo} - R$ ${carro.preco.toFixed(3)}`);
+        const {modelo, preco} = carro; // "desestrutura" objeto carro em modelo 
+        console.log(`${modelo} - R$ ${preco.toFixed(3)}`);
+    }
+
+    const pacientes = ["Ana", "Carlos", "Sofia"];
+    const [a, b, c] = pacientes;
+    console.log(a); // Ana
+    console.log(b); // Carlos
+    console.log(c); // Sofia
+
+    // REST ... ACRESCENTA PARA O FINAL DO ARRAY
+    const pacientes1 = ["Ana", "Carlos", "João", "Sofia"];
+    const [atender, próximo, ...outros] = pacientes1;
+    console.log(atender);
+    console.log(próximo);
+    console.log(outros);
+
+    // ...SPREAD ACRESCENTA PARA O INÍCIO DO ARRAY
+    const carro = {modelo: "Corsa", preco: 59500};
+    const carro2 = { ...carro, ano: 2020};
+    console.log(carro2); // {modelo: "Corsa, preco: 59.500, ano: 2020"}
+
+    let pacientes2 = ["João", "Esmeralda", "Sofia"];
+    pacientes2 = ["Ana", ...pacientes2, "José"];  // acrescenta "Ana" no início do array
+    pacientes2 = ["Cristiano", ...pacientes2, "Maria"];   // acrescenta "Maria" no final do array
+    console.log(pacientes)
+
+</script>

@@ -1,0 +1,66 @@
+<script>
+    // PESQUISAR E FILTRAR DADOS:
+
+    // const idades = [12, 16, 15, 17, 14];
+    // let = maiores = false; // flag de controle
+    // for (const idade of idades) {
+    //     if (idade >= 18) {
+    //         console.log(idade);
+    //         maiores = true;
+    //     }
+    // }
+    // if (!maiores) {
+    //     console.log("Não há idade maiores que 18 na lista");
+    // }
+
+    // // MAP, FILTER E REDUCE
+    // // são métodos que permitem que operações sobre arrays sejam realizadas em um modo mais eficiente.
+    // // obs: iremos usar Arrow Functions
+    // // MAP = mapeia os itens do array (item por item) sem precisar fazer um for (É COMO SE FOSSE UM FOR)
+
+    // const numeros1 = [10, 13, 20, 8, 15]; // array inicial
+    // const dobros = numeros1.map(num => num * 2); // cada número obtido é multiplicado por 2
+    // console.log(dobros.join(", ")); // 20, 26, 40, 16, 30
+
+    // const amigos = [{nome: "Ana", idade: 20},
+    //     {nome: "Amanda", idade: 17},
+    //     {nome: "Bruna", idade: 30}];
+
+    // // // // aux é apenas um nome dado para conseguir puxar o mapa e conseguir fazer a operação necessária
+    // const amigos2 = amigos.map(aux => ({nome: aux.nome, nasc: 2026 - aux.idade}));
+   
+    // for (const amigo of amigos) {
+    //     console.log(`${amigo.nome} - Nasceu em: ${amigo.nasc}`);
+    // }
+
+    // // // FILTER = também cria um novo array. agora cada elemento do vetor de origem é submetido a uma condição, que se verdadeira, adicioa um elemento ao novo array.
+
+    // const numeros2 = [10, 13, 20, 8, 15]; // vetor inicial
+    // const pares = numeros2.filter(num => num % 2 == 0); // condição para o filtro
+    // console.log(pares.join(' , ')); // 10, 20, 8
+   
+
+    // const amigos3 = [{nome: "Carlos", idade: 17},
+    //     {nome: "Leona", idade: 20},
+    //     {nome: "Bárbara", idade: 27}];
+    // const amigos4 = amigos.filter(aux => aux.idade >= 21 || aux.nome.includes("B"));
+
+    // for (const amigo of amigos4) {
+    //     console.log(`${amigo.nome} - Idade ${amigo.idade} anos`);
+    // }
+
+    const numeros = [10, 13, 20, 8, 15]; // vetor inicial
+    // const soma = numeros.reduce((acumulador, num) => acumulador + num, 0); // condição para o filtro
+    // console.log(`Soma: ${soma}`); // 66
+
+    // const soma = amigos.reduce((acumulador, amigo) => acumulador + amigo.idade, 0); // condição para o filtro
+    // const todos = amigos.reduce((acumulador, amigo) => acumulador + amigo.nome + ", ", ""); // condição para o filtro
+
+    // console.log(`Soma das idades: ${soma}`); // 66
+    // console.log(`Todos os nomes: ${todos}`); // 66
+
+    const maior = numeros.reduce((a, b) => Math.max(a, b), 0); // condição para o filtro
+    console.log(`Maior número: ${maior}`); // 20
+
+
+</script>
