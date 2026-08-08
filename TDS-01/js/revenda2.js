@@ -3,7 +3,7 @@ const resp = document.querySelector('pre');
 
 const carros = [];
 
-frm.addEventListener('submit', (e) => {
+frm.addEventListener("submit", (e) => {
     e.preventDefault();
     const modelo = frm.inModelo.value;
     const preco = Number(frm.inPreco.value);
@@ -15,7 +15,7 @@ frm.addEventListener('submit', (e) => {
     frm.btListar.dispatchEvent(new Event('click'));
 });
 
-frm.btListar.addEventListener('click', () => {
+frm.btListar.addEventListener("click", () => {
     if (carros.length == 0) {
         alert('Não há carros na lista');
         return;
@@ -27,7 +27,7 @@ frm.btListar.addEventListener('click', () => {
     resp.innerText = `Lista de carros cadastrados:\n${"-".repeat(40)} ${lista}`;
 });
 
-frm.btFiltrar.addEventListener('click', () => {
+frm.btFiltrar.addEventListener("click", () => {
     const maximo = Number(prompt('Qual o preço máximo que deseja pagar?'));
     if(maximo == 0 || isNaN(maximo)) {
         alert('Valor inválido');
@@ -47,7 +47,7 @@ frm.btFiltrar.addEventListener('click', () => {
     resp.innerText = `Lista de carros com preço menor ou igual a R$ ${maximo.toFixed(2)}:\n${"-".repeat(40)} ${lista}`;
 });
 
-frm.btnSimular.addEventListener('click', () => {
+frm.btSimular.addEventListener("click", () => {
     const desconto = Number(prompt('Qual o percentual de desconto?'));
     if(desconto == 0 || isNaN(desconto)) {
         alert('Valor inválido');
@@ -63,5 +63,5 @@ frm.btnSimular.addEventListener('click', () => {
     for(const carro of carrosDesconto) {
         lista += `${carro.modelo} - R$ ${carro.preco.toFixed(2)}\n`;
     }
-    resp.idnerText = `Lista de carros com desconto de ${desconto.toFixed(2)}%:\n${"-".repeat(40)}\n ${lista}`;
+    resp.innerText = `Lista de carros com desconto de ${desconto.toFixed(2)}%:\n${"-".repeat(40)}\n ${lista}`;
 });
