@@ -22,7 +22,7 @@ frm.btListar.addEventListener("click", () => {
     }
     //reduce() para concatenar uma string obtendo modelo e preço de cada carro
     const lista = carros.reduce((acumulador, carro) => {
-        return acumulador + `${carro.modelo} - R$ ${carro.preco.toFixed(2)}\n`;
+        acumulador + `${carro.modelo} - R$ ${carro.preco.toFixed(2)}\n`;
     }, ''); 
     resp.innerText = `Lista de carros cadastrados:\n${"-".repeat(40)} ${lista}`;
 });
@@ -53,12 +53,10 @@ frm.btSimular.addEventListener("click", () => {
         alert('Valor inválido');
         return;
     }
-    const carrosDesconto = carros.map(aux => {
-        return {
+    const carrosDesconto = carros.map(aux => ({
             modelo: aux.modelo,
             preco: aux.preco * (1 - desconto / 100)
-        };
-    })
+    }))
     let lista = "";
     for(const carro of carrosDesconto) {
         lista += `${carro.modelo} - R$ ${carro.preco.toFixed(2)}\n`;
