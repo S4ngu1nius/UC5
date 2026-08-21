@@ -44,4 +44,6 @@ class LampadaInteligente {
 
 const lampada = new LampadaInteligente(50, true);
 console.log(`Brilho atual: ${lampada.brilho}`);
+console.log(`Estado atual: ${lampada.estado ? "ligada" : "desligada"}`);
 
+lampada.brilho = 80;
