@@ -24,3 +24,5 @@ const funcionarioComum = new Funcionario("Vitor", 5000);
 const funcionarioGerente = new Gerente("Ana", 8000, "TI");
 
 funcionarioComum.exibirDados();
+funcionarioGerente.exibirDados();
+funcionarioGerente.gerenciaEquipe();
