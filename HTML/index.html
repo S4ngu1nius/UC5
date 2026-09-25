@@ -3,33 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro Website</title>
+    <title>Selectores</title>
+    <style>
+        div {
+            background-color: lightblue;
+            color: black;
+            font-size: 20px;
+        }
+        div.teste {
+            background-color: lightgrey;
+            color: red;
+            font-size: 20px;
+        }
+
+        span {
+            color: blue;
+            font-size: 20px;
+        }
+
+        #paragrafo1 {
+            color: green;
+            font-size: 20px;
+        }
+
+        .cor {
+            color: orange;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Homepage</h1>
-    <nav>
-    <a href="./index.html">Home</a>
-    <a href="./page2.html">Página 2</a>
-    <a href="./page3.html">Página 3</a>
-    <a href="./page4.html">Página 4</a>
-    </nav>
-    
+
+    <div> Este é o conteúdo de um elemento div;</div>
+    <div>E temos aqui outro elemento div.</div>
+    <span>Este é um texto dentro de um elemento span.</span>
+
     <div>
-    <img src="./img/planet_mars.jpg" alt="Marte">
+        <p id="paragrafo1">Teste</p>
     </div>
 
-    <article>
-        <p>
-            Ipson Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            At molestiae sit excepturi minus illo quis, corporis fugiat, debitis ex, asperiores a! Neque repellendus sit ipsa culpa velit itaque amet sed!
-        </p>
-    </article>
+    <div class="teste">Este é um elemento div com uma classe.</div>
 
-    <footer>
-        <small>
-            <i>&copy; 2024 - Todos os direitos reservados</i>
-        </small>
-    </footer>
+    <div>
+        <ul>
+            <li>Primeiro elemento de uma lista</li>
+            <li>Segundo elemento de uma lista</li>
+            <li class="cor">Terceiro elemento de uma lista</li>
+            <li>Quarto elemento de uma lista</li>
+            <li>Quinto elemento de uma lista</li>
+        </ul>
+    </div>
 
+    <p>Fim do exercicio sobre seletores.</p>
+    
 </body>
 </html>
