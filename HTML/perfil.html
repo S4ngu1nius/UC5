@@ -1,0 +1,60 @@
+<!--
+
+Desafio: "O Perfil de Rede Social"
+ 
+Crie um arquivo HTML e um CSS para criar um "Card de Perfil" (estilo Instagram/LinkedIn simplificado).
+ 
+Requisitos:
+ 
+Container: Deve ter largura máxima de 400px, fundo branco, borda arredondada 
+(border-radius) e sombra (box-shadow).
+ 
+Imagem: Use uma div com background-color colorida (simulando uma foto) ou uma tag <img>. Deve ser circular (dica: border-radius: 50%).
+ 
+Tipografia: Nome em negrito (font-weight), bio em cinza escuro (color), texto justificado ou centralizado.
+ 
+Botão Seguir: Um botão com fundo azul, texto branco, sem sublinhado, com padding generoso e cantos levemente arredondados.
+ 
+Unidades: Devem usar rem para fontes e px ou % para margens/paddings.
+Centralização: O card deve estar centralizado na tela usando margin: auto.
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Social Profissional</title>
+    <link rel="stylesheet" href="./perfil.css">
+</head>
+<body>
+    <p class="titulo">Perfil de Rede Social</p>
+    <div class="card">
+        <div class="azul"></div>
+        <div class="foto">
+            <img src="./img/stickMan.png" alt="Foto do Usuário">
+        </div>
+        <a href="#" class="devfs">Desenvolvedor Fullstack Jr.</a>
+        <h5>Ribeirão Preto, SP</h5>
+        <h2 class="nome">Vitor Porto</h2>
+        <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#" class="HTML5">HTML5</a>
+        <a href="#" class="CSS3">CSS3</a>
+        <a href="#" class="JavaScript">JavaScript</a>
+        <a href="#" class="Git">Git</a>
+        <br>
+        <br>
+        <div class= "detalhes">
+            <p class="projetos">64 <br>Projetos</p>
+            <p class="seguidores">1234 <br>Seguidores</p>
+            <p class="seguindo">567 <br>Seguindo</p>
+        </div>
+        <br>
+        <br>
+        <button class="seguir">Seguir</button>
+        <button class="mensagem">Mensagem</button>
+    </div>
+
+</body>
+</html>

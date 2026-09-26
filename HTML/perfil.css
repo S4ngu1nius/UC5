@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2rem;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.azul {
+    width: full;
+    height: 80px;
+    background-color: #007bff;
+    margin-bottom: -45px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.foto img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    margin-bottom: 15px;
+}
+
+.devfs {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+h5 {
+    color: #666;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.nome {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.bio {
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.HTML5,
+.CSS3,
+.JavaScript,
+.Git {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #e9ecef;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+.detalhes {
+    background-color: #B8B8B8;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.detalhes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.detalhes p {
+    font-weight: bold;
+    color: #333;
+}
+
+.seguir,
+.mensagem {
+    padding: 12px 50px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.seguir {
+    padding: 12px 50px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+}
+
+.mensagem {
+    padding: 12px 50px;
+    border: none;
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.seguir:hover {
+    background-color: #0056b3;
+}
+
+.mensagem:hover {
+    background-color: #d6d6d6;
+}
