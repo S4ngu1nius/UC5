@@ -1,0 +1,33 @@
+<!--
+Requisitos do Desafio:
+O Cartão: Deve ter position: relative, cantos arredondados, fundo branco e uma sombra suave.
+Selo de Promoção ("Badge"): Criar uma tag no canto superior do cartão escrita "20% OFF" com position: absolute, cor chamativa e texto em maiúsculas (text-transform: uppercase).
+Imagem do Produto: Deve ter um tamanho fixo e usar object-fit: cover.
+Preço: O preço antigo deve estar riscado (text-decoration: line-through) e o preço novo em destaque com cor verde e fonte maior.
+Interatividade:
+Ao passar o mouse sobre o cartão (:hover), ele deve subir levemente usando transform: translateY() e aumentar a sombra.
+O botão "Comprar" deve ter uma cor com linear-gradient e mudar suavemente de cor com transition.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./promo.css">
+    <title>Card Promocional</title>
+</head>
+<body>
+    <div class="card">
+        <div class="badge">20% OFF</div>
+        <div class="imagem-produto">
+            <div class="badge">20% OFF</div>
+        <img src="./img/tenis-on-running-removebg-preview.png" alt="Produto" class="produto">
+        </div>
+        <h2 class="descricao-produto">Calçado</h2>
+        <p class="nome-produto">On Running</p>
+        <p class="preco-antigo">R$ 100,00</p>
+        <p class="preco-novo">R$ 80,00</p>
+        <button class="comprar">Comprar</button>
+</body>
+</html>

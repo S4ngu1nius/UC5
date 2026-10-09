@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagem-produto{
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    background-color: lightblue;
+    border-radius: 15px;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 35px;
+    left: 60px;
+
+    background-color: darkblue;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.produto {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.nome-produto {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.descricao-produto {
+    font-size: 1.2rem;
+    color: lightgray;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.preco-antigo,
+.preco-novo {
+    display: inline-block;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.preco-novo {
+    color: darkred;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.comprar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
